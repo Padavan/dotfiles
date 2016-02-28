@@ -1,0 +1,6 @@
+#!/bin/sh
+#o
+#
+
+# Autostart
+isavailable redshift && redshift &

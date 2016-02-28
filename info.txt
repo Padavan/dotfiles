@@ -1,0 +1,7 @@
+bash: ~/.bash
+gnome-terminal: dedicated-launch
+mocp: ~/.moc/
+mpv: ~/.config/mpv/
+#mpv 14.04: ~/.mpv/
+qtcurve: ~/.config
+themes: ~/.themes/

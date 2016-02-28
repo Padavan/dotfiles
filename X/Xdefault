@@ -1,0 +1,64 @@
+! file:     ~/.Xdefaults
+! author:   STxza
+!-------------------------------------------------------------------------------
+!xscreensaver.Dialog.headingFont: -*-fixed-bold-r-*-*-*-100-*-*-*-*-iso8859-1
+
+!{{{urxvt
+URxvt*termName:         rxvt-256color
+URxvt*imLocale:         en_AU.UTF-8
+URxvt*loginShell:       true
+URxvt*saveLines:        32767
+
+URxvt*scrollBar:        false
+URxvt*secondaryScroll:  true
+!URxvt.font:             -misc-fixed-medium-r-normal--15-140-75-75-c-90-iso8859-1 
+!------------------------------------------------------------------------------
+! u r x v t
+
+URxvt*geometry:         80x24 
+URxvt*font:            xft:inconsolata:size=12:antialias=false
+URxvt.letterSpace: -1
+URxvt.perl-ext-common:  default,matcher
+URxvt.matcher.button:   1
+URxvt*scrollBar:        false
+URxvt*scrollBar_right:        true
+URxvt*scrollColor:        #ffffff
+URxvt.url-launcher: /usr/bin/chromium-browser
+URxvt.matcher.button: 1
+URxvt.iso14755: False
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
+
+!URxvt.tabbed.new-button: true
+!URxvt.tabbed.autohide: false
+!URxvt.tabbed.reopen-on-close: yes
+!URxvt.keysym.Control-t: perl:tabbedex:new_tab
+!URxvt.keysym.Control-Tab: perl:tabbedex:next_tab
+!URxvt.keysym.Control-Shift-Tab: perl:tabbedex:prev_tab
+
+
+! Background color
+URxvt*background: black
+
+! Font color
+URxvt*foreground: white
+
+! Other colors
+URxvt*color0: black
+URxvt*color1: red3
+URxvt*color2: green3
+URxvt*color3: yellow3
+URxvt*color4: blue2
+URxvt*color5: magenta3
+URxvt*color6: cyan3
+URxvt*color7: gray90
+URxvt*color8: grey50
+URxvt*color9: red
+URxvt*color10: green
+URxvt*color11: yellow
+URxvt*color12: blue
+URxvt*color13: magenta
+URxvt*color14: cyan
+URxvt*color15: white

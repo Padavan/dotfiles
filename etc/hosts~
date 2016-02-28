@@ -1,0 +1,25 @@
+127.0.0.1	localhost
+127.0.1.1	marisa
+
+# The following lines are desirable for IPv6 capable hosts
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+
+127.0.0.1 4pda.ru
+127.0.0.1 opennet.ru
+127.0.0.1 phoronix.com
+127.0.0.1 news.ycombinator.com
+127.0.0.1 horriblesubs.info
+127.0.0.1 4chan.org
+127.0.0.1 board.4chan.org
+127.0.0.1 2ch.hk
+127.0.0.1 iichan.hk
+127.0.0.1 bnw.im
+127.0.0.1 juick.com
+#127.0.0.1 eztv.it
+#127.0.0.1 eztv.ch
+#127.0.0.1 kat.cr
+
