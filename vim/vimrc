@@ -9,7 +9,6 @@ call vundle#rc()
 "filetype plugin indent on
 
 " --- PLugins -----
-"git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'chriskempson/base16-vim'
@@ -88,6 +87,17 @@ set encoding=utf8
 " }}}
 
 "let base16colorspace=256
+
+"{{{ Name gnome-terminal tabs after opened file
+let &titlestring = $USER . "@" . hostname() . " " . expand("%:p")
+if &term == "screen"
+  set t_ts=^[k
+    set t_fs=^[\
+    endif
+    if &term == "screen" || &term == "xterm"
+      set title
+      endif
+" }}}
 
 "set background=dark
 "colorscheme base16-monokai
