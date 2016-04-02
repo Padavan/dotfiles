@@ -1,0 +1,41 @@
+#MPV config 
+##Video options
+#vd-lavc-fast=yes
+#vd-lavc-skiploopfilter=all
+#vd-lavc-threads=3
+vo=opengl
+#vo=xv
+#hwdec=vaapi
+fs=yes
+
+#Audio options
+ao=pulse
+autosync=30
+mc=1
+volume=100
+alang=jpn,Japanese,kor,Korean,en,eng,English
+
+#Screenshot
+screenshot-format=png
+screenshot-template='~/Pictures/%F %p'
+
+# Subtitles options
+sub-auto=fuzzy
+ass-force-style=Kerning=yes
+sub-text-font='Helvetica Neue Medium'
+sub-text-font-size=36
+sub-text-margin-y=42
+sub-text-color='#ececea'
+sub-text-border-color='#29292b'
+sub-text-border-size=1.5
+ass-hinting=native
+sub-codepage=enca:ru:utf8
+slang=jpn,Japanese,en,eng,English
+
+# Rice osd
+no-osc
+osd-bar-align-y=0.85
+osd-color='#F6F6C9'
+osd-border-size=0
+osd-bar-w=100
+osd-bar-h=0.1

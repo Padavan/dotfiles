@@ -1,0 +1,8 @@
+[user]
+	name = Dmitriy Shikhaleev
+	email = padavankun@gmail.com
+[color]
+	ui = true
+	diff = never
+[push]
+	default = simple

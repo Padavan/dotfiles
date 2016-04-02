@@ -1,0 +1,111 @@
+set nocompatible
+"filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+
+call vundle#rc() 
+
+"This shit broke vim
+"filetype plugin indent on
+
+" --- PLugins -----
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'chriskempson/base16-vim'
+Plugin 'bling/vim-airline'
+" Plugin 'Valloric/YouCompleteMe' "not working with python 2
+" Align CSV files at commas, align Markdown tables, and ore
+Plugin 'tpope/vim-surround'
+
+call vundle#end()
+
+" --- General Settings ----
+filetype plugin indent on
+set fileencodings=utf-8 
+set backspace=indent,eol,start 
+set whichwrap+=<,>,[,]
+
+" command timeout
+set ttimeout
+set ttimeoutlen=100
+
+let mapleader=','
+let g:mapleader=','
+" faster commands
+
+
+"highlight current line
+set cursorline
+" highlight 80th and 120th column
+" set colorcolumn=80
+
+" Add a bit extra margin to the left
+set foldcolumn=1
+
+" Use spaces instead of tabs
+set expandtab
+set smarttab
+
+" 1 tab == 4 spaces
+set shiftwidth=4
+set tabstop=4
+
+" indenting
+set autoindent
+set smartindent
+
+" wrap lines
+set wrap
+
+set nu
+syntax on
+set modifiable
+set softtabstop=2
+set foldenable
+set nobackup
+set showcmd
+set nowritebackup
+set noswapfile
+set ai
+
+syntax enable
+
+set mouse=a
+" --- Plugin specific settings ----
+"=> Colors and Fonts {{{
+" " Enable syntax highlighting
+ syntax enable
+
+let g:base16_shell_path='~/.bash/'
+let base16colorspace=256
+set t_Co=256
+set background=dark
+colorscheme base16-monokai
+
+" Set utf8 as standard encoding and en_US as the standard language
+set encoding=utf8
+" }}}
+
+"let base16colorspace=256
+
+"{{{ Name gnome-terminal tabs after opened file
+let &titlestring = $USER . "@" . hostname() . " " . expand("%:p")
+if &term == "screen"
+  set t_ts=^[k
+    set t_fs=^[\
+    endif
+    if &term == "screen" || &term == "xterm"
+      set title
+      endif
+" }}}
+
+"set background=dark
+"colorscheme base16-monokai
+
+"airline
+"show statusbar
+"set laststatus=2
+"show paste if in paste mode
+"let g:airline_detect_paste = 1
+" show airline for tabs
+"let g:airline#extension#tabline#enable = 1
